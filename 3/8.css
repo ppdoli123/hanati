@@ -1,0 +1,46 @@
+
+h1{
+    color : #00ffff;
+}
+section{
+    color : red;
+}
+/* h2{
+    color: purple;
+} */
+#sdf{
+    color: blue;
+}
+.select{
+    color:darkkhaki;
+}
+/* h3{
+    color: blueviolet;
+} */
+input[type="text"] {
+    background: red;
+}
+p[class="abc"]{
+    color: red;
+}
+p[class |= "abc"]{
+    color: blue;
+}
+p[class$="abc"]{
+    color: yellow;
+}
+a[href^="mailto"]{
+    color: #00ffff;
+}
+#header h1{
+    color:bisque;
+}
+h1 > h2 {
+    color:chocolate;
+}
+h3~h2 {
+    color:aquamarine;
+}
+span[class ^= "bold"] {
+    color: pink;
+}
