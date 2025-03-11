@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width:100px;
+            height:100px;
+            background-color: red;
+        }
+        .one:hover{
+            width: 130px;
+            height: 130px;
+            background-color: blue;
+            transition: all 1s;
+            transition-timing-function: ease-in-out;
+        }
+        .one:active {
+            width: 100vw;
+            height: 100vh;
+            background-color: green;
+            tansition : all 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+
+</body>
+</html>

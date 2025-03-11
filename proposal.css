@@ -1,0 +1,38 @@
+div.background {
+    background-color: rgb(249, 247, 240);
+    height: 1080px;
+    width: 1800px;
+}
+div.pic1 {
+    position: absolute;
+    top: 6vw;
+    transform: translateX(30vw);
+}
+div.pic2 {
+    position: absolute;
+    top: 30vw;
+    transform: translateX(27vw);
+}
+div.pic3 {
+    position: absolute;
+    top: 10vw;
+    transform: translate(490px,490px);
+}
+div.pic4 {
+    position: absolute;
+    top: 10vw;
+    transform: translate(490px,490px);
+}
+div.pic5 {
+    position: absolute;
+    top: 10vw;
+    transform: translate(490px,490px);
+}
+div.pic6 {
+    position: absolute;
+    top: 10vw;
+    transform: translate(490px,490px);
+}
+p.name_pro {
+    transform: translateX(10vw);
+}

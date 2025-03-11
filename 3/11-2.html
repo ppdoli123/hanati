@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            width: 100vw;
+            height : 2rem;
+            background-color: plum;
+
+        }
+        div:nth-child(2n) {
+            background-color: purple;
+        }
+        div:first-child {
+            background-color: black;
+        }
+        div:last-child {
+            background-color: darkcyan;
+        }
+
+        div:nth-child(3):hover {
+            color:royalblue;
+            background-color: white;
+        }
+        div:nth-child(3):active {
+            color: black;
+            font-size: 100px;
+        }
+        div::first-letter {
+            font-weight: bold;
+            font-size: 30px;
+            color: aqua;
+        }
+        div:last-child {
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">aaaasdf</div>
+    <div class="one">asdfasfsafsa</div>
+    <div class="one">afasfasdfasd</div>
+    <div class="one">sadfsfasfsdfasdfs</div>
+    <div class="one">lorem</div>
+    <div class="one">eeeeeeeeeee</div>
+    <div class="one">qqqqqqqqqqqq</div>
+    <div class="one">zzzzzzzzzzzz</div>
+    <div class="one">안녕하세여</div>
+    <div class="one">반가워요</div>
+</body>
+</html>
