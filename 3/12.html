@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent-id #child-id {
+            color : green;
+        }
+        #parent-id div.child-clss{
+            color : blue ;
+        }
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: palegreen;
+            border : px solid black;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+        .two {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border : 10px solid black;
+            box-sizing: content-box;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div id="parent-id">
+        <div id="child-id" class="child-clss2">child</div>
+    </div>
+</body>
+</html>

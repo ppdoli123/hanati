@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .one {
+        /* .one {
             width: 100vw;
             height : 2rem;
             background-color: plum;
@@ -13,14 +13,22 @@
         }
         div:nth-child(2n) {
             background-color: purple;
-        }
-        div:first-child {
+        } */
+        /* div:first-child {
             background-color: black;
-        }
-        div:last-child {
+        } */
+        /* div:last-child {
             background-color: darkcyan;
-        }
+        } */
 
+        div::first-letter {
+            font-weight: bold;
+            font-size: 30px;
+            color: aqua;
+        }
+        div:nth-child(3) {
+            color: blueviolet;
+        }
         div:nth-child(3):hover {
             color:royalblue;
             background-color: white;
@@ -29,26 +37,21 @@
             color: black;
             font-size: 100px;
         }
-        div::first-letter {
-            font-weight: bold;
-            font-size: 30px;
-            color: aqua;
-        }
-        div:last-child {
+        /* div:last-child {
             font-size: 50px;
-        }
+        } */
     </style>
 </head>
 <body>
-    <div class="one">aaaasdf</div>
-    <div class="one">asdfasfsafsa</div>
-    <div class="one">afasfasdfasd</div>
-    <div class="one">sadfsfasfsdfasdfs</div>
-    <div class="one">lorem</div>
-    <div class="one">eeeeeeeeeee</div>
-    <div class="one">qqqqqqqqqqqq</div>
-    <div class="one">zzzzzzzzzzzz</div>
-    <div class="one">안녕하세여</div>
-    <div class="one">반가워요</div>
+    <div class="one">1번 문장입니다.</div>
+    <div class="two">2번 dfasfsafsa</div>
+    <div class="thr">3번 asfasdfasd</div>
+    <div class="four">sadfsfasfsdfasdfs</div>
+    <div class="fiv">lorem</div>
+    <div class="six">eeeeeeeeeee</div>
+    <div class="sev">qqqqqqqqqqqq</div>
+    <div class="eig">zzzzzzzzzzzz</div>
+    <div class="nin">안녕하세여</div>
+    <div class="ten">반가워요</div>
 </body>
 </html>
