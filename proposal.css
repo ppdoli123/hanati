@@ -29,21 +29,21 @@ div.background {
   /* transform: translate(457.66px, 448.18px); */
   transform: translateY(448.18px);
   width: 100%;
-  text-align: center;
   color: rgb(101, 127, 191);
   list-style-type: none;
   margin: auto;
+  text-align: center;
+  z-index: 200;
 }
 span.title_text {
-  font-family: "YAEv6srNZ4U 0", _fb_, auto;
   font-size: 120px;
   font-style: normal;
   /* margin: auto; */
   font-weight: 400;
   line-height: 146px;
   letter-spacing: 0.042em;
-  display: inline;
-  z-index: 200;
+  transform: translate();
+  
 }
 
 div.main_screen {
