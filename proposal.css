@@ -19,6 +19,7 @@ body {
   background-color: rgb(249, 247, 240);
   border-top: 5px solid #333;
   border-bottom: 5px solid black;
+  overflow: hidden;
 }
 
 div.background {
@@ -43,7 +44,6 @@ span.title_text {
   line-height: 146px;
   letter-spacing: 0.042em;
   transform: translate();
-  
 }
 
 div.main_screen {
@@ -250,8 +250,8 @@ table {
   text-align: center;
   align-items: center;
 }
-#four_id{
-font-size: 20px;
+#four_id {
+  font-size: 20px;
 }
 #four_context {
   font-size: 33px;
@@ -259,4 +259,119 @@ font-size: 20px;
 #four_img {
   width: 259px;
   height: 195px;
+}
+.five_name {
+  font-size: 68px;
+  position: absolute;
+  transform: translate(95px, 90px);
+}
+.five_section {
+  display: flex;
+  font-size: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+td {
+  border: 1px solid #000;
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+.main-content {
+  width: 400px;
+  background-color: #fff;
+}
+.five_section {
+  position: absolute;
+  width: 1112.39px;
+  height: 702.194px;
+  transform: translate(95.6075px, 217.616px);
+}
+.five_img {
+  position: absolute;
+  transform: translate();
+}
+.blue_box_1 {
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  border: 5px solid #006dff;
+  transform: translate(-50px, 900px);
+  overflow: hidden;
+}
+.blue_box_2 {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  border: 5px solid #006dff;
+  transform: translate(1300px, -20px);
+  overflow: hidden;
+}
+.blue_box_3 {
+  position: absolute;
+  width: 100px;
+  height: 129px;
+  border: 5px solid #006dff;
+  transform: translate(1850px, 100px);
+  overflow: hidden;
+}
+.red_box_1 {
+  position: absolute;
+  width: 900px;
+  height: 100px;
+  border: 5px solid #ff7d2d;
+  transform: translate(30px, 1030px);
+  overflow: hidden;
+  clip-path: inset(0px 50px 100px 100px);
+}
+.red_box_2 {
+  position: absolute;
+  width: 900px;
+  height: 80px;
+  border: 5px solid #ff7d2d;
+  transform: translate(1100px, -40px);
+  overflow: hidden;
+}
+.red_box_3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: 100;
+  border: 5px solid #ff7d2d;
+  transform: translate(1800px, 80px);
+  overflow: hidden;
+}
+.spacer {
+  width: 120px;
+  background-color: #e6eef8;
+  font-weight: bold;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-cell {
+  width: 380px;
+  background-color: #fff;
+}
+
+.feature-item {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.feature-dash {
+  display: inline-block;
+  margin-right: 5px;
 }
