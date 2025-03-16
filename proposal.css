@@ -22,9 +22,6 @@ body {
   overflow: hidden;
 }
 
-div.background {
-}
-
 .main {
   position: absolute;
   /* transform: translate(457.66px, 448.18px); */
@@ -36,16 +33,19 @@ div.background {
   text-align: center;
   z-index: 200;
 }
-span.title_text {
-  font-size: 120px;
-  font-style: normal;
-  /* margin: auto; */
-  font-weight: 400;
-  line-height: 146px;
-  letter-spacing: 0.042em;
-  transform: translate();
+
+.five_table,.six_table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #000;
 }
 
+.five_table td,.six_table td {
+  border: 1px solid #000;
+  padding: 8px 10px;
+  vertical-align: middle;
+  
+}
 div.main_screen {
   padding: 16px 24px;
 }
@@ -97,7 +97,7 @@ div.pic6 {
 div.second_pic1 {
   position: absolute;
   transform: translate(53.1106px, -79.8189px);
-  overflow: hidden;
+  clip-path: inset(80px 0px 0px 0px);
 }
 div.second_pic2 {
   position: absolute;
@@ -107,12 +107,12 @@ div.second_pic2 {
 div.second_pic3 {
   position: absolute;
   transform: translate(1320.43px, -47.8191px);
-  overflow: hidden;
+  clip-path: inset(50px 0px 0px 0px);
 }
 div.second_pic4 {
   position: absolute;
   transform: translate(272.015px, 953.329px);
-  overflow: hidden;
+  clip-path: inset(0px 0px 45px 0px);
 }
 div.second_pic5 {
   position: absolute;
@@ -123,6 +123,7 @@ div.second_pic6 {
   position: absolute;
   transform: translate(-50.5949px, 679.062px);
   overflow: hidden;
+  clip-path: inset(0px 0px 0px 55px);
 }
 /* 목차 */
 article {
@@ -130,23 +131,31 @@ article {
   width: 100%;
   transform: translateY(383.608px);
 }
+
+.first_text {
+  position: absolute;
+  font-size: 120px;
+  transform: translate(457px,400px);
+  /* margin: auto; */
+  color: rgb(101, 127, 191);
+}
+.nine > .first_text{
+  font-size: 100px;
+}
+
 section.second {
   display: flex;
-  top: 0;
-  float: left;
-  width: 50%;
-  height: 100%;
-  justify-content: space-between;
-}
-section.second > p {
-  font-size: 80px;
-  width: 100%;
-  align-items: center;
   text-align: center;
+  align-items: center;
 }
-table {
-  width: 100%;
+.sec_text {
+  font-size: 80px;
+  width: 600px;
+}
+.second_table {
+  width: 1300px;
   border-collapse: collapse;
+
 }
 
 .second_tr {
@@ -218,7 +227,7 @@ table {
   text-decoration: underline;
   width: 100px;
 }
-.four_text {
+.title_text {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -227,8 +236,10 @@ table {
   transform: translate(521.985px, 108px);
   font-size: 68px;
   text-align: center;
+  color: rgb(101, 127, 191);
+  font-weight: bold;
 }
-.four_bar {
+.title_bar {
   width: 426.237px;
   height: 18.1238px;
   transform: translate(750px, 90px);
@@ -244,42 +255,42 @@ table {
   width: 580px;
   height: 542px;
   background-color: white;
-  border-bottom: 2px solid red;
+  border-right: 5px dotted #fad393;
 }
-.four_space {
+.four_space{
   text-align: center;
-  align-items: center;
+}
+.four_section :nth-child(3) {
+  border-right: 1px solid white;
 }
 #four_id {
+  margin-top: 80px;
   font-size: 20px;
+  color: #ff8186;
+  font-weight: bold;
 }
 #four_context {
+  margin-top: 5px;
   font-size: 33px;
+  color: #657fbf;
 }
 #four_img {
-  width: 259px;
+  display: inline-block;
+  margin-top: 50px;
+  width: 400px;
   height: 195px;
 }
 .five_name {
   font-size: 68px;
   position: absolute;
   transform: translate(95px, 90px);
+  color: rgb(101, 127, 191);
 }
 .five_section {
   display: flex;
   font-size: 20px;
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 2px solid #000;
-}
 
-td {
-  border: 1px solid #000;
-  padding: 8px 10px;
-  vertical-align: top;
-}
 
 .main-content {
   width: 400px;
@@ -290,10 +301,23 @@ td {
   width: 1112.39px;
   height: 702.194px;
   transform: translate(95.6075px, 217.616px);
+  vertical-align:middle;
 }
 .five_img {
   position: absolute;
-  transform: translate();
+  width: 1112.39px;
+  height: 702.194px;
+  transform: translate(1231.06px, 217.771px);
+  clip-path: inset(10px 0px 0px 0px);
+}
+.five_text {
+  position: absolute;
+  display: flex;
+  width: 650px;
+  justify-content: space-around;
+  transform: translate(1250.06px, 800px);
+  font-size: 30px;
+  
 }
 .blue_box_1 {
   position: absolute;
@@ -301,7 +325,7 @@ td {
   height: 300px;
   border: 5px solid #006dff;
   transform: translate(-50px, 900px);
-  overflow: hidden;
+  clip-path: inset(0px 0px 130px 50px);
 }
 .blue_box_2 {
   position: absolute;
@@ -309,7 +333,7 @@ td {
   height: 100px;
   border: 5px solid #006dff;
   transform: translate(1300px, -20px);
-  overflow: hidden;
+  clip-path: inset(20px 0px 0px 0px);
 }
 .blue_box_3 {
   position: absolute;
@@ -317,7 +341,15 @@ td {
   height: 129px;
   border: 5px solid #006dff;
   transform: translate(1850px, 100px);
-  overflow: hidden;
+  clip-path: inset(0px 40px 0px 0px);
+}
+.blue_box_4 {
+  position: absolute;
+  width: 700px;
+  height: 70px;
+  border: 5px solid #006dff;
+  transform: translate(191.093px, 970px);
+  clip-path: inset(0px 0px 0px 0px);
 }
 .red_box_1 {
   position: absolute;
@@ -326,7 +358,7 @@ td {
   border: 5px solid #ff7d2d;
   transform: translate(30px, 1030px);
   overflow: hidden;
-  clip-path: inset(0px 50px 100px 100px);
+  clip-path: inset(0px 0px 59px 0px);
 }
 .red_box_2 {
   position: absolute;
@@ -334,7 +366,7 @@ td {
   height: 80px;
   border: 5px solid #ff7d2d;
   transform: translate(1100px, -40px);
-  overflow: hidden;
+  clip-path: inset(40px 90px 0px 0px);
 }
 .red_box_3 {
   position: absolute;
@@ -343,7 +375,16 @@ td {
   z-index: 100;
   border: 5px solid #ff7d2d;
   transform: translate(1800px, 80px);
-  overflow: hidden;
+  clip-path: inset(0px 40px 0px 0px);
+}
+.red_box_4 {
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  z-index: 100;
+  transform: translate(30px, 1000px);
+  border: 5px solid #ff7d2d;
+  clip-path: inset(0px 0px 25px 0px);
 }
 .spacer {
   width: 120px;
@@ -351,8 +392,7 @@ td {
   font-weight: bold;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .features-cell {
@@ -374,4 +414,35 @@ td {
 .feature-dash {
   display: inline-block;
   margin-right: 5px;
+}
+.six_section {
+  position: absolute;
+  width: 1700px;
+  height: 700.194px;
+  transform: translate(95.6075px, 217.616px);
+  vertical-align:middle;
+  font-size: 20px;
+}
+.six_table {
+  height: 100%;
+}
+.seven_main {
+  position: absolute;
+  display: flex;
+  width: 1600px;
+  justify-content: space-around;
+  transform: translate(115.158px, 252.006px);
+}
+.sev_name{
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+}
+.eight_main{
+  position: absolute;
+  width:1700px;
+  height: 600px;
+  transform: translate(108px, 250px);
+  display: flex;
+  justify-content: space-around;
 }
