@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="article">
+      <li id="article1">1</li>
+      <li id="article2">1</li>
+      <li id="article3">1</li>
+      <li id="article4">1</li>
+      <li id="article5">1</li>
+      <li id="article6">1</li>
+      <li id="article7">1</li>
+      <li id="article8">1</li>
+      <li id="article9">1</li>
+      <li id="article10">1</li>
+    </ul>
+
+    <script>
+      const articleA = document.getElementById("article");
+      articleA.addEventListener("click", (ev) => {
+        console.log(ev.target.id);
+      });
+    </script>
+  </body>
+</html>

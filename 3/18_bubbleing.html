@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div-id">div영역
+        <p id="p-id">p영역
+        <a id="a-id" href="http://www.kopo.ac.kr">폴리텍 이동</a>
+        </p>
+        </div>
+        <script>
+        const div = document.getElementById('div-id');
+        const p = document.getElementById('p-id');
+        const a = document.getElementById('a-id');
+        div.addEventListener('click', ()=> {
+        console.log('div 클릭');
+        }, true);
+        p.addEventListener('click', (ev)=> {
+        console.log('p 클릭');
+        ev.stopPropagation();
+        }, true);
+        a.addEventListener('click', ()=> {
+        console.log('a 클릭');
+        }, true);
+</body>
+</html>

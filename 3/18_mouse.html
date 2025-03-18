@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" width>
+      <div class="result"></div>
+    </div>
+    <input class="clear" type="button" value="clear"></input>
+    <script>
+      const clear = document.querySelector(".clear");
+      const result = document.querySelector(".result");
+      const mouseA = document.querySelector(".box");
+      mouseA.addEventListener("click", (ev) => {
+        result.innerHTML += "<div>click</div>";
+      });
+      mouseA.addEventListener("mousedown", (ev) => {
+        result.innerHTML += "<div>mousedown</div>";
+      });
+      mouseA.addEventListener("mouseup", (ev) => {
+        result.innerHTML += "<div>mouseup</div>";
+      });
+      clear.addEventListener("click", (ev) => {
+        result.innerHTML = "";
+      });
+    </script>
+  </body>
+</html>
