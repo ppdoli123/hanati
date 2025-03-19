@@ -1,0 +1,79 @@
+.header {
+  height: 5vh;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+.up_bar {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+
+.footer {
+  height: 10vh;
+}
+.down_bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.semi_title {
+  font-size: 24px;
+  width: 12vw;
+  text-align: center;
+  align-items: center;
+  background-color: bisque;
+}
+.active {
+  background-color: red;
+}
+.main_context {
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.introduction_context {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grade_context {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.intro_text {
+  font-size: 30px;
+  width: 40vw;
+}
+.intro_img {
+  width: 500px;
+  height: 500px;
+}
+.intro_img:hover {
+  width: 600px;
+  height: 600px;
+}
+.grade_context {
+  font-size: 30px;
+}
+.grade_list {
+  display: flex;
+  margin: 30px;
+}
+.text_bold {
+  font-weight: bold;
+  margin-right: 30px;
+}
+.title {
+  font-size: 100px;
+  margin-bottom: 50px;
+}
+.title_context {
+  font-size: 70px;
+}
