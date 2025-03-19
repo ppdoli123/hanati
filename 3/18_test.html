@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section">
+      <input type="text" id="title" />
+      <input type="button" value="버튼" id="submit" />
+    </section>
+    <div class="todo_context"></div>
+
+    <script>
+      const todo = document.querySelector(".todo_context");
+
+      const titleT = document.getElementById("title");
+      const submitS = document.getElementById("submit");
+      submitS.addEventListener("click", (ev) => {
+        console.log(titleT.value);
+        localStorage.setItem(titleT.id, titleT.value);
+        const todo_title = document.createElement("li");
+        const todo_delete = document.createElement("input");
+        todo_delete.textContent = "삭제";
+        todo_title.textContent = `${localStorage.getItem(titleT.id)}`;
+        todo.appendChild(todo_title, todo_delete);
+      });
+
+      //   // Add new todo item
+      //   submitS.addEventListener("click", (ev) => {
+      //     if (titleT.value.trim() !== "") {
+      //       // Add new item to array
+      //       todoItems.push(titleT.value);
+      //       // Store updated array in localStorage
+      //       localStorage.setItem("todoItems", JSON.stringify(todoItems));
+      //       // Clear input field
+      //       titleT.value = "";
+      //       // Re-render the list
+      //       renderTodoItems();
+      //     }
+      //   });
+    </script>
+  </body>
+</html>

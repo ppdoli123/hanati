@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    사슴에 관한 진실.
+    <ol>
+      <li>사슴은 똑똑합니다.</li>
+      <!-- comment -->
+      <li>그리고 잔꾀를 잘 부리죠!</li>
+    </ol>
+    <select>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <script>
+      const select = document.querySelector("select");
+      console.log(select instanceof EventTarget); //true
+      console.log(select instanceof Node); //true
+      console.log(select instanceof Element); //true
+      console.log(select instanceof HTMLElement); //true
+      console.log(select instanceof HTMLSelectElement); //true
+      console.log(select instanceof HTMLInputElement); //false
+    </script>
+  </body>
+</html>
