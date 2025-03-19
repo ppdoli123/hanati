@@ -25,8 +25,71 @@
   align-items: center;
   background-color: bisque;
 }
-.active {
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 12vw; /* 다른 버튼들과 같은 너비 */
+}
+.dropdown-toggle {
+  width: 100%; /* 부모 요소의 너비를 채움 */
+  height: 100%;
+}
+.dropdown-menu {
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-direction: column;
+}
+.hidden {
+  display: none;
+}
+.active{
+  display: flex;
+}
+.custom-dropdown:hover .dropdown-menu,
+.custom-dropdown:focus-within .dropdown-menu {
+  display: flex;
+}
+.sub-menu {
+  width: 100%; /* 드롭다운 메뉴 너비에 맞춤 */
+  margin-top: 2px;
+  background-color: #89c2ff; /* 서브메뉴 색상 차별화 */
+}
+.sub-act {
+  background-color: blue;
+}
+.after {
   background-color: red;
+}
+.fe_context {
+  text-align: left;
+  font-size: 30px;
+}
+.news-article {
+  text-align: left ;
+  width: 100%;
+  height: 10%;
+}
+.lotto_container {
+  display: flex;
+}
+.news-article div {
+  height: 50%;
+  font-size: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lotto_main div{
+  display: inline-block;
+}
+
+.lotto_context{
+  display: flex;
+  flex-direction: column;
 }
 .main_context {
   height: 80vh;
@@ -35,6 +98,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.click_loto:hover{
+  color: blue;
 }
 .introduction_context {
   height: 80vh;
@@ -63,10 +129,14 @@
   font-size: 30px;
 }
 .grade_list {
-  display: flex;
   margin: 30px;
 }
+.grade_list div {
+  display: inline-block; /* 인라인 블록으로 설정하여 한 줄에 배치 */
+  
+}
 .text_bold {
+  display: inline;
   font-weight: bold;
   margin-right: 30px;
 }
